@@ -1,0 +1,45 @@
+{
+  "model": "linear_regression_least_squares",
+  "features": [
+    "intercept",
+    "tmax_d-6",
+    "tmax_d-5",
+    "tmax_d-4",
+    "tmax_d-3",
+    "tmax_d-2",
+    "tmax_d-1",
+    "tmax_d-0",
+    "sin_doy",
+    "cos_doy"
+  ],
+  "coefficients": [
+    5.156508,
+    0.07212,
+    -0.037135,
+    0.004009,
+    0.024582,
+    0.032505,
+    -0.061015,
+    0.809044,
+    0.632948,
+    -0.445908
+  ],
+  "data_file": "data/synthetic_tmax.csv",
+  "data_is_synthetic": true,
+  "train_period": "2015-01-08 .. 2022-12-31",
+  "test_period": "2023-01-01 .. 2024-12-31",
+  "n_train": 2915,
+  "n_test": 731,
+  "test_metrics": {
+    "linear_regression": {
+      "mae_c": 0.987,
+      "rmse_c": 1.237,
+      "risk_level_accuracy": 0.88
+    },
+    "persistence_baseline": {
+      "mae_c": 1.052,
+      "rmse_c": 1.311,
+      "risk_level_accuracy": 0.893
+    }
+  }
+}
