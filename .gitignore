@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets / credentials (never commit)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+kubeconfig*
+.docker/
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Claude Code local settings
+.claude/settings.local.json
+CLAUDE.md
+
+# Packaged deliverables (built for submission, not source)
+*.zip
+
+# Note: data/synthetic_tmax.csv and model/model.json are intentionally tracked
+# (sample data + model artifact are required in the submission).
